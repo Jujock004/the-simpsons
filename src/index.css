@@ -12,15 +12,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #ef684a;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #ef785d8b;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -45,10 +36,3 @@ button {
   cursor: pointer;
 }
 
-#counter  {
-  color: white;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}

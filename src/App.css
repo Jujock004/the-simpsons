@@ -8,7 +8,6 @@
 .avatar {
   display:flex;
   flex-wrap: wrap;
-  gap: 0px;
 }
 
 figure  {
@@ -21,7 +20,7 @@ figure  {
 figcaption  {
   background-color: rgba(255, 255, 255, 0.33);
   width: 100%;
-  border-style: double;
+  border-style: dashed;
   border-radius: 50px;
   padding: 5px;
   margin-top: 10px;
@@ -30,6 +29,19 @@ figcaption  {
   font-family: "Rock Salt", cursive;
   font-weight: bold;
   word-spacing: 5px;
+  color: white;
+}
+
+figcaption:hover {
+  animation-duration: 500ms;
+  animation-name: expand;
+  animation-fill-mode: forwards;
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: -5px 5px 5px -5px rgba(0, 0, 0, 0.45);
+}
+
+a {
+  text-decoration: inherit;
 }
 
 #logo {
@@ -42,13 +54,7 @@ figcaption  {
   animation-name: wiggle;
 }
 
-figcaption:hover {
-  animation-duration: 500ms;
-  animation-name: expand;
-  animation-fill-mode: forwards;
-}
-
-img:hover {
+.picture:hover {
   animation-duration: 1s;
   animation-name: expand;
   animation-fill-mode: forwards;
@@ -93,6 +99,36 @@ figure:hover {
     
 }
   to {
-    transform: scale(1.08);
+    transform: scale(1.12);
+}
+}
+
+#counter  {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#counter img:hover  {
+  animation-name: rotation;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+#counter:hover {
+  animation-name: expand;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+  from {
+    transform:rotate(0deg)
+    
+}
+  to {
+    transform: rotate(360deg);
 }
 }

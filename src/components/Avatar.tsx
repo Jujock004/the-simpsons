@@ -18,7 +18,7 @@ export function Avatar({image, firstName, lastName, link})   {
                 <img width="40em" src="https://www.stickees.com/files/cartoon/the-simpsons/2370-pink-donut.png"/> 
                 {count}
             </button>
-            <img class="picture"
+            <img className="picture"
                 src={image}
             />
             <a href={link} target="_blank"><figcaption>{firstName} {lastName}</figcaption></a>
